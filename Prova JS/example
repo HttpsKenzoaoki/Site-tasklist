@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Interativo</title>
+    <style>
+        /* Adicione seu CSS aqui */
+        .correct { background-color: #90EE90; }
+        .incorrect { background-color: #FFB6C1; }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="question-container">
+            <h2 id="question"></h2>
+            <div id="options"></div>
+            <p>Progresso: <span id="progress">0/0</span></p>
+            <p>Pontuação: <span id="score">0</span></p>
+        </div>
+        <div id="result-container" style="display: none;">
+            <h2>Seu Resultado: <span id="final-score">0</span></h2>
+            <button onclick="restartQuiz()">Tentar Novamente</button>
+        </div>
+    </div>
+
+    <script>
+        // Adicione seu JavaScript aqui
+        const questions = [
+            {
+                question: "Qual é a capital do Brasil?",
+                options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
+                correct: 1
+            },
+            {
+                question: "Quantos planetas existem em nosso sistema solar?",
+                options: ["7", "8", "9", "10"],
+                correct: 1
+            }
+            // Adicione mais perguntas...
+        ];
+
+        // Variáveis de estado
+        let currentQuestion = 0;
+        let score = 0;
+
+        // Função para iniciar o quiz
+        function startQuiz() {
+            showQuestion();
+            updateProgress();
+        }
+
+        // Função para exibir a pergunta atual
+        function showQuestion() {
+            // Implemente aqui...
+        }
+
+        // Função para verificar resposta
+        function checkAnswer(selectedIndex) {
+            // Implemente aqui...
+        }
+
+        // Função para atualizar progresso
+        function updateProgress() {
+            // Implemente aqui...
+        }
+
+        // Função para mostrar resultado final
+        function showResult() {
+            // Implemente aqui...
+        }
+
+        // Função para reiniciar quiz
+        function restartQuiz() {
+            // Implemente aqui...
+        }
+
+        // Iniciar o quiz quando a página carregar
+        window.onload = startQuiz;
+    </script>
+</body>
+</html>
